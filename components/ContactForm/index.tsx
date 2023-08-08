@@ -6,17 +6,19 @@ import emailjs from "@emailjs/browser";
 import { useProducts } from "./hooks/useProducts";
 
 import {
+  Flex,
   Text,
   Link,
   FormControl,
   FormHelperText,
   FormLabel,
-  Box,
   Button,
   Input,
   Textarea,
   Select,
   Checkbox,
+  Spinner,
+  useToast,
 } from "@chakra-ui/react";
 
 type Inputs = {
@@ -39,12 +41,11 @@ export const ContactForm = () => {
     handleSubmit,
     reset,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<Inputs>();
 
+  const toast = useToast();
   const form: React.RefObject<HTMLFormElement> = useRef(null);
-
-  //const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
 
   const onSubmit: SubmitHandler<Inputs> = () =>
     emailjs
@@ -56,19 +57,33 @@ export const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          alert("Mensagem enviada com sucesso");
+          toast({
+            title: "Mensagem enviada.",
+            description: "Sua mensagem foi enviada com sucesso.",
+            status: "success",
+            duration: 9000,
+            isClosable: true,
+          });
+
           reset();
         },
         (error) => {
-          alert("Houve um erro ao enviar sua mensagem. Tente novamente.");
+          toast({
+            title: "Erro ao enviar mensagem.",
+            description:
+              "Houve um problema ao enviar sua mensagem. Tente novamente.",
+            status: "error",
+            duration: 9000,
+            isClosable: true,
+          });
+
           console.log(error.text);
         }
       );
 
   return (
-    <Box
-      maxW={"xl"}
+    <Flex
+      maxW={["sm", "md", "xl"]}
       bg="gray.100"
       flexDirection="column"
       border="1px solid #e5e5e5"
@@ -85,7 +100,7 @@ export const ContactForm = () => {
             type="text"
             placeholder="Digite seu nome completo"
             bg="#fff"
-            size="md"
+            size={["sm", "md"]}
             mb={4}
             {...register("name", { required: true })}
           />
@@ -93,11 +108,13 @@ export const ContactForm = () => {
           <FormLabel mt={4}>CPF/CNPJ</FormLabel>
           <Input
             id="document"
-            type="text"
+            type="number"
             placeholder="Documento"
             bg="#fff"
-            size="md"
-            {...register("document")}
+            size={["sm", "md"]}
+            {...register("document", {
+              valueAsNumber: true,
+            })}
           />
           <FormHelperText pl={2} mb={4} fontSize="smaller">
             Somente números
@@ -108,7 +125,7 @@ export const ContactForm = () => {
             type="email"
             placeholder="e-mail@dominio.com.br"
             bg="#fff"
-            size="md"
+            size={["sm", "md"]}
             mb={4}
             {...register("email")}
           />
@@ -118,7 +135,7 @@ export const ContactForm = () => {
             type="text"
             placeholder="Telefone"
             bg="#fff"
-            size="md"
+            size={["sm", "md"]}
             {...register("phone")}
           />
           <FormHelperText pl={2} mb={4} fontSize="smaller">
@@ -130,7 +147,7 @@ export const ContactForm = () => {
             type="text"
             placeholder="Celular"
             bg="#fff"
-            size="md"
+            size={["sm", "md"]}
             {...register("cellphone")}
           />
           <FormHelperText pl={2} mb={4} fontSize="smaller">
@@ -141,7 +158,7 @@ export const ContactForm = () => {
             id="product"
             placeholder="-- Selecione um produto --"
             bg="#fff"
-            size="md"
+            size={["sm", "md"]}
             mb={4}
             {...register("product")}
           >
@@ -156,25 +173,24 @@ export const ContactForm = () => {
             id="message"
             placeholder="Mensagem"
             bg="#fff"
-            size="md"
+            size={["sm", "md"]}
             mb={4}
             {...(register("message"), { required: true })}
           />
           <Checkbox
             id="mailing"
             bg="#fff"
-            size="md"
+            size={["sm", "sm", "md"]}
             mb={4}
             {...register("mailing")}
           >
-            <option>
-              Aceito receber e-mails de comunicações, ofertas ou promoções
-            </option>
+            <option>Aceito receber e-mails de</option>
+            <Text>comunicações, ofertas ou promoções</Text>
           </Checkbox>
           <Checkbox
             id="privacy"
             bg="#fff"
-            size="md"
+            size={["sm", "sm", "md"]}
             mb={4}
             {...(register("privacy"), { required: true })}
           >
@@ -192,7 +208,9 @@ export const ContactForm = () => {
             </Text>
           </Checkbox>
         </FormControl>
+
         <Button
+          disabled={isSubmitting}
           type="submit"
           bg="primary.500"
           _hover={{ bg: "secondary.500" }}
@@ -204,7 +222,15 @@ export const ContactForm = () => {
         >
           ENVIAR
         </Button>
+        {isSubmitting && (
+          <Spinner
+            ml={4}
+            color="secondary.500"
+            thickness="4px"
+            visibility="visible"
+          />
+        )}
       </form>
-    </Box>
+    </Flex>
   );
 };

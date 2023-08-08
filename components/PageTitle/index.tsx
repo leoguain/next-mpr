@@ -16,7 +16,7 @@ export const PageTitle = ({ pageTitle, pageUrl }: TitleProps) => {
       <Text
         align={"center"}
         color={"primary.500"}
-        fontSize={["xl", "2xl"]}
+        fontSize={["md", "xl", "2xl"]}
         my={4}
       >
         {pageTitle}

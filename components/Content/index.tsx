@@ -5,7 +5,7 @@ export const Content = ({ children, ...rest }: FlexProps) => {
   return (
     <Flex
       w="100%"
-      maxWidth={"7xl"}
+      maxWidth={["3xl", "3xl", "3xl", "4xl", "6xl"]}
       mx="auto"
       px={4}
       direction="column"

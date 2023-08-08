@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { Text, Flex, Box, Icon, Tooltip } from "@chakra-ui/react";
+import { Text, Flex, Icon, Tooltip } from "@chakra-ui/react";
 
 import { useBottomBar } from "../BottomBar/hooks/useBottomBar";
-import { BottomBarProps } from "../types";
 
 export const BottomBar = () => {
   const { bbItems } = useBottomBar();

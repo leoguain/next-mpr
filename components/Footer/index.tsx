@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Flex, Text, Image, Box, AspectRatio } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 
 import {
   FaPhoneAlt,
@@ -14,7 +14,15 @@ import React from "react";
 export const Footer = () => {
   return (
     <React.Fragment>
-      <Flex bg="#02314b" w="100%" mx="auto" p={[4]} pb={20} gap={10}>
+      <Flex
+        bg="#02314b"
+        flexDirection={["column", "row"]}
+        w="100%"
+        mx="auto"
+        p={[4]}
+        pb={20}
+        gap={[4, 10]}
+      >
         <Box flex={1}>
           <Text
             borderBottom={"1px dotted"}
@@ -112,7 +120,7 @@ export const Footer = () => {
           <Link passHref href="/politica-de-privacidade">
             <Text
               color={"#fff"}
-              fontSize="sm"
+              fontSize={["sm", "xs", "sm"]}
               _hover={{ color: "secondary.500" }}
             >
               Política de privacidade
@@ -165,6 +173,7 @@ export const Footer = () => {
           </Flex>
         </Box>
       </Flex>
+
       <BottomBar />
     </React.Fragment>
   );

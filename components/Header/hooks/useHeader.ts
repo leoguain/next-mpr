@@ -16,7 +16,7 @@ export const useHeader = () => {
       },
       {
         id: "Produtos",
-        href: "/produtos-corretor",
+        href: "/produtos",
         subItems: [],
       },
       {
