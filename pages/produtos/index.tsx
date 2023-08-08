@@ -1,14 +1,22 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import type { InferGetStaticPropsType, GetStaticProps } from "next";
 
 import { Page } from "components/Page";
 import { Content } from "components/Content";
+import { PageTitle } from "components/PageTitle";
+import { ProductsList } from "components/ProductsList";
+
+import { products } from "../../hooks/useProducts";
 
 function Produtos({
   pageTitle,
   description,
+  products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const { asPath } = useRouter();
+
   return (
     <>
       <Head>
@@ -17,7 +25,10 @@ function Produtos({
       </Head>
 
       <Page title={pageTitle} description={description}>
-        <Content></Content>
+        <Content>
+          <PageTitle pageTitle={pageTitle} pageUrl={asPath} />
+          <ProductsList products={products} />
+        </Content>
       </Page>
     </>
   );
@@ -32,6 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       pageTitle,
       description,
+      products: products,
     },
     revalidate: 60 * 60 * 24, // 24 hours
   };
