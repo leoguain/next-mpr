@@ -3,15 +3,7 @@ import NextLink from "next/link";
 
 import { When } from "../../components/shared/When";
 
-import {
-  Box,
-  Text,
-  Image,
-  Link,
-  AspectRatio,
-  Button,
-  FlexProps,
-} from "@chakra-ui/react";
+import { Box, Text, Image, Link, AspectRatio, Button } from "@chakra-ui/react";
 
 import { TextsProps } from "./types";
 
@@ -22,6 +14,8 @@ import { IconTextList } from "./components/IconTextList";
 import { TextList } from "./components/TextList";
 
 export const PageConstructor = ({ text }: TextsProps) => {
+  const bannerProductsFile = "/productsBanners/";
+
   return (
     <Box my={4}>
       {text.map(({ id, type, text, texts, path }) => (
@@ -51,7 +45,7 @@ export const PageConstructor = ({ text }: TextsProps) => {
           </When>
 
           <When value={type === "paragraph"}>
-            <Text color={"#000"} fontSize={["md"]} textAlign="justify" my={4}>
+            <Text color={"#000"} fontSize={["md"]} textAlign="justify" mb={4}>
               {text}
             </Text>
           </When>
@@ -62,8 +56,15 @@ export const PageConstructor = ({ text }: TextsProps) => {
               fontSize={["md"]}
               fontWeight="bold"
               textAlign="justify"
-              my={4}
+              mb={4}
+              mt={8}
             >
+              {text}
+            </Text>
+          </When>
+
+          <When value={type === "paragraphU"}>
+            <Text as="u" color={"#000"} fontSize={["md"]} textAlign="justify">
               {text}
             </Text>
           </When>
@@ -121,6 +122,18 @@ export const PageConstructor = ({ text }: TextsProps) => {
           </When>
 
           {/*- MÍDIAS ----------------------------------------------*/}
+          <When value={type === "banner"}>
+            <Box display="flex" justifyContent="center">
+              <Image
+                src={bannerProductsFile + path + ".jpg"}
+                alt={text}
+                objectFit="cover"
+                mt={2}
+                mb={4}
+              />
+            </Box>
+          </When>
+
           <When value={type === "imageC"}>
             <Box display="flex" justifyContent="center">
               <Image src={path} alt={text} objectFit="cover" mt={2} />

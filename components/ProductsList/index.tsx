@@ -6,6 +6,7 @@ import { Flex, Text, Image } from "@chakra-ui/react";
 import { ProductsProps } from "./types";
 
 export const ProductsList = ({ products }: ProductsProps) => {
+  const thumbProductsFile = "/productsThumbs/";
   const page = "/produtos/";
 
   return (
@@ -17,7 +18,7 @@ export const ProductsList = ({ products }: ProductsProps) => {
       p={8}
       flexWrap="wrap"
     >
-      {products.map(({ id, image, title, text, url }) => (
+      {products.map(({ id, title, text }) => (
         <Flex
           key={id}
           m={1}
@@ -32,7 +33,7 @@ export const ProductsList = ({ products }: ProductsProps) => {
               <Flex flexDirection={"column"} alignItems={"center"}>
                 <Image
                   alt="logo do campeonato"
-                  src={image}
+                  src={thumbProductsFile + id + ".jpg"}
                   width="150px"
                   mb={4}
                 />

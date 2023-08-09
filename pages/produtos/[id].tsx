@@ -9,17 +9,12 @@ import type {
   GetStaticPaths,
 } from "next";
 
-import { Flex } from "@chakra-ui/react";
-
 import { Page } from "components/Page";
 import { Content } from "components/Content";
 import { PageTitle } from "components/PageTitle";
 import { PageConstructor } from "../../components/PageConstructor";
 
 import { products } from "../../hooks/useProducts";
-
-import { Button } from "@chakra-ui/react";
-import NextLink from "next/link";
 
 function Product({
   title,
@@ -37,10 +32,8 @@ function Product({
 
       <Page title={title} description={description}>
         <Content>
-          <Flex justifyContent={["center"]} flexDirection={["column"]} px={12}>
-            <PageTitle pageTitle={title} pageUrl={asPath} />
-            <PageConstructor text={content} />
-          </Flex>
+          <PageTitle pageTitle={title} pageUrl={asPath} />
+          <PageConstructor text={content} />
         </Content>
       </Page>
     </React.Fragment>
