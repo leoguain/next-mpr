@@ -376,12 +376,164 @@ export const products = [
     id: "seguro-acidentes-pessoais-escolar",
     title: "Seguro de Acidentes Pessoais Escolar",
     text: "Proteção e assistência para alunos. Tranquilidade para pais, responsáveis e estabelecimentos de ensino.",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro de Acidentes Pessoais Escolar",
+        path: "seguro-acidentes-pessoais-escolar",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraphN",
+        text: "Proteção e assistência para alunos. Tranquilidade para pais, responsáveis e estabelecimentos de ensino.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "A responsabilidade de uma escola, colégio ou universidade não se limita à educação de seus alunos. É preciso oferecer também proteção e assistência.",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "Foi por isso que desenvolvemos o Seguro de Acidentes Pessoais Escolar, que oferece segurança e assistência aos alunos em caso de acidente, principalmente durante a prática de atividades dentro e fora do estabelecimento de ensino, durante o período em que o estudante estiver matriculado na escola.",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "O seguro proporciona ainda mais tranquilidade aos pais, aos responsáveis e ao estabelecimento de ensino.",
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraphN",
+        text: "COBERTURAS PELO PLANO:",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Transporte do segurado em caso de lesão por acidente pessoal;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Transporte para tratamento fisioterápico;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Adiantamento de gastos médicos em caso de lesão por acidente pessoal no exterior;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Transporte e estadia de familiar;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Serviços de conveniência/ indicações.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraph",
+        text: "Seguros pensados para atender às suas necessidades. Faça uma cotação e descubra como pode ser fácil obter essas vantagens.",
+      },
+    ],
   },
   {
     id: "seguro-acidentes-pessoais-plus",
     title: "Seguro de Acidentes Pessoais Plus",
     text: "Vantagens e benefícios exclusivos para dar mais tranquilidade e segurança para você e sua família em casos de acidentes.",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro de Acidentes Pessoais Plus",
+        path: "seguro-acidentes-pessoais-plus",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraphN",
+        text: "Em caso de acidentes, nós cuidamos de você!",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "Para viver mais tranquilo, sem preocupações do dia a dia, conte com o Seguro Acidentes Pessoais Individual Plus.",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraphN",
+        text: "Sabe o que é fundamental nos dias de hoje? Ter um seguro de proteção contra acidentes inesperados!",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "Nos dias de hoje, é fundamental termos uma proteção no caso de acidentes, afinal de contas, eles acontecem quando menos esperamos. Conte conosco sempre que precisar e contrate um seguro completo que cuidará de você quando mais precisar.São diversas coberturas para pessoas com idade entre 16 até 70 anos, e em condições satisfatórias de saúde pode contratar a qualquer momento.",
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraph",
+        text: "Um dos diferenciais do seguro está na Cobertura DIT (Diária por Incapacidade Temporária), que possibilita o pagamento de até 365 diárias compatíveis com sua renda caso fique afastado de sua atividade profissional.",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraphN",
+        text: "Principais Vantagens",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Descontos em eventos culturais;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Titulo de Capitalização.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraphN",
+        text: "Muito mais vantagens para você",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraph",
+        text: "Você também conta com descontos em uma ampla rede de parceiros, como: academias, farmácias, SPA’s, clínicas de estética, teatro, restaurantes, assistência 24 horas em viagens e muito mais.",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraphN",
+        text: "Sorteios Mensais",
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraph",
+        text: "Todos os meses, mantendo o pagamento do seu seguro em dia, você concorre a sorteios de 12 mil reais* pela Loteria Federal.",
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "Este é mais um seguro feito para pessoas prevenidas, como você! Obtenha já uma cotação com nossa equipe.",
+      },
+    ],
   },
+
+
+
+
   {
     id: "seguro-acidentes-pessoais-individual-prazo-curto",
     title: "Seguro de Acidentes Pessoais Individual Prazo Curto",
