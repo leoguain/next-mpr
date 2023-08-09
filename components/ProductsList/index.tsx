@@ -1,28 +1,39 @@
 import React from "react";
 import Link from "next/link";
 
-import { Flex, Box, Text, Image } from "@chakra-ui/react";
+import { Flex, Text, Image } from "@chakra-ui/react";
 
 import { ProductsProps } from "./types";
 
 export const ProductsList = ({ products }: ProductsProps) => {
+  const page = "/produtos/";
+
   return (
-    <Box gap={4} mt={2} p={8}>
-      <Flex
-        alignSelf={"center"}
-        justifyContent="center"
-        gap={4}
-        flexWrap="wrap"
-      >
-        {products.map(({ id, image, title, text, url }) => (
-          <Flex key={id} m={1} gap={2} background="#ebebeb" width={56} p={4}>
-            <Flex flexDirection={"column"} align="center" gap={2}>
-              <Link href={url} passHref>
+    <Flex
+      alignSelf={"center"}
+      justifyContent="center"
+      gap={4}
+      mt={2}
+      p={8}
+      flexWrap="wrap"
+    >
+      {products.map(({ id, image, title, text, url }) => (
+        <Flex
+          key={id}
+          m={1}
+          gap={2}
+          background="#ebebeb"
+          width={56}
+          p={4}
+          flexDirection={"column"}
+        >
+          <Flex align="center" justifyContent={"center"} gap={2}>
+            <Link href={page + id} passHref>
+              <Flex flexDirection={"column"} alignItems={"center"}>
                 <Image
                   alt="logo do campeonato"
                   src={image}
                   width="150px"
-                  align={"center"}
                   mb={4}
                 />
                 <Text
@@ -32,15 +43,14 @@ export const ProductsList = ({ products }: ProductsProps) => {
                 >
                   {title}
                 </Text>
-              </Link>
-
-              <Text color={"primary.500"} fontSize={["xs"]}>
-                {text}
-              </Text>
-            </Flex>
+              </Flex>
+            </Link>
           </Flex>
-        ))}
-      </Flex>
-    </Box>
+          <Text color={"primary.500"} fontSize={["xs"]}>
+            {text}
+          </Text>
+        </Flex>
+      ))}
+    </Flex>
   );
 };

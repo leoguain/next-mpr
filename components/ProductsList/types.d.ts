@@ -3,9 +3,10 @@ export type ProductsProps = {
 };
 
 export type ProductProps = {
-  id: number | undefined;
+  id: string;
   image: string | undefined;
   title: string | undefined;
   text: string | undefined;
   url: string;
+  content: string | undefined;
 };
