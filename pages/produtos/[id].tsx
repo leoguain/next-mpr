@@ -52,7 +52,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     { params: { id: "seguro-apartamentos" } },
     { params: { id: "consorcio-veiculos" } },
     { params: { id: "seguro-auto-pequenas-empresas" } },
-    { params: { id: "seguro_condominio" } },
+    { params: { id: "seguro-condominio" } },
     { params: { id: "consorcio" } },
     { params: { id: "seguro-residencia-premium" } },
     { params: { id: "seguro-vida-mais-mulher" } },
