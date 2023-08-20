@@ -14,7 +14,7 @@ export type ProductsProps = {
 
 export type ProductProps = {
   id: string;
-  title: string | undefined;
+  title: string;
   text: string | undefined;
   url: string;
   type: string;

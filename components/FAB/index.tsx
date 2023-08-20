@@ -12,13 +12,14 @@ const FAB = () => {
       borderRadius={4}
       position={"fixed"}
       right="0"
-      top={["8em", "8em", "12em", "12em", "2em"]}
+      top={["14em", "16em", "18em", "12em", "14em"]}
       p={1}
       cursor="pointer"
       transition="linear 0.2s"
-      maxWidth={[24]}
+      maxW={[20, 24]}
+      zIndex={3}
       _hover={{
-        maxWidth: "120",
+        maxW: ["100px", "120px"],
       }}
     >
       <Link color="#fff" passHref href="/produtos">

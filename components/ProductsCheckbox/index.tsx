@@ -104,10 +104,3 @@ export const ProductsCheckbox = ({ products }: ProductsProps) => {
     </React.Fragment>
   );
 };
-
-/*
-
-<LoadPortoProducts products={products} />
-      <LoadMPrProducts products={activeProducts} />
-
-      */

@@ -5,6 +5,7 @@ import { Flex, Text, Image } from "@chakra-ui/react";
 
 import { ProductsProps } from "../../types";
 import { PortoButton } from "./components/PortoButton";
+import { exit } from "process";
 
 export const LoadPortoProducts = ({ products }: ProductsProps) => {
   const externalProductsFile = "/productsExternal/";

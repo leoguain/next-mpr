@@ -147,6 +147,9 @@ export const PageConstructor = ({ text }: TextsProps) => {
           </When>
 
           <When value={type === "video"}>
+            <Text fontSize={"md"} fontWeight="bold" color={"#003d5c"}>
+              {text}
+            </Text>
             <AspectRatio ratio={16 / 9}>
               <iframe src={path} allowFullScreen title={text} />
             </AspectRatio>
