@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 
-import { useProducts } from "./hooks/useProducts";
+import { products } from "../../hooks/useProducts";
 
 import {
   Flex,
@@ -21,6 +21,8 @@ import {
   useToast,
 } from "@chakra-ui/react";
 
+import { ProductsDropDown } from "./components/ProductsDropDown";
+
 type Inputs = {
   name: string;
   document: string;
@@ -33,9 +35,11 @@ type Inputs = {
   privacy: string;
 };
 
-export const ContactForm = () => {
-  const { products } = useProducts();
+interface SelectedIdProps {
+  selectedId?: string;
+}
 
+export const ContactForm = ({ selectedId }: SelectedIdProps) => {
   const {
     register,
     handleSubmit,
@@ -51,7 +55,7 @@ export const ContactForm = () => {
     emailjs
       .sendForm(
         "service_g91esj1",
-        "template_j5o5jic",
+        "template_7govf8q",
         form.current || "",
         "0qmtdfR_V38wbMh0q"
       )
@@ -154,20 +158,29 @@ export const ContactForm = () => {
             Formato: (xx) xxxxx - xxxx
           </FormHelperText>
           <FormLabel mt={4}>Produto</FormLabel>
+
           <Select
             id="product"
-            placeholder="-- Selecione um produto --"
+            placeholder={selectedId ? "" : "-- Selecione um produto --"}
             bg="#fff"
             size={["sm", "md"]}
             mb={4}
             {...register("product")}
           >
-            {products.map(({ id, text }) => (
-              <React.Fragment key={id}>
-                <option>{text}</option>
-              </React.Fragment>
-            ))}
+            {products
+              .sort((a, b) => (a.title < b.title ? -1 : 1))
+              .map(({ id, title }) => (
+                <React.Fragment key={id}>
+                  <option
+                    value={title}
+                    selected={selectedId === id ? true : false}
+                  >
+                    {title}
+                  </option>
+                </React.Fragment>
+              ))}
           </Select>
+
           <FormLabel mt={4}>Mensagem*</FormLabel>
           <Textarea
             id="message"

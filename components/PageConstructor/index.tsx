@@ -38,6 +38,12 @@ export const PageConstructor = ({ text }: TextsProps) => {
             </Link>
           </When>
 
+          <When value={type === "note"}>
+            <Text color={"#000"} fontSize={["sm"]} my={1}>
+              {text}
+            </Text>
+          </When>
+
           <When value={type === "noteC"}>
             <Text color={"#000"} fontSize={["sm"]} textAlign="center" my={4}>
               {text}

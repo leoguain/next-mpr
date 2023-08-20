@@ -16,10 +16,17 @@ import { PageConstructor } from "../../components/PageConstructor";
 
 import { products } from "../../hooks/useProducts";
 
+import { When } from "../../components/shared/When";
+import { PortoButton } from "components/ProductsCheckbox/components/LoadPortoProducts/components/PortoButton";
+import { ContactFormDrawer } from "components/ContactFormDrawer";
+
 function Product({
+  id,
   title,
   description,
   content,
+  type,
+  url,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { asPath } = useRouter();
 
@@ -34,6 +41,14 @@ function Product({
         <Content>
           <PageTitle pageTitle={title} pageUrl={asPath} />
           <PageConstructor text={content} />
+
+          <When value={type.includes("porto")}>
+            <PortoButton url={url} />
+          </When>
+
+          <When value={type.includes("mpr")}>
+            <ContactFormDrawer selectedId={id} />
+          </When>
         </Content>
       </Page>
     </React.Fragment>
@@ -72,6 +87,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
     { params: { id: "seguro-auto-premium" } },
     { params: { id: "seguro-vida-individual" } },
     { params: { id: "alarmes-monitoramento" } },
+    { params: { id: "rastreador-porto-seguro" } },
+    { params: { id: "seguro-vida" } },
+    { params: { id: "seguro-vida-mais-simples" } },
+    { params: { id: "seguro-residencial" } },
+    { params: { id: "seguro-equipamentos-portateis" } },
+    { params: { id: "seguro-viagem" } },
+    { params: { id: "seguro-auto" } },
+    { params: { id: "seguro-moto" } },
   ];
 
   return {
@@ -85,15 +108,21 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return product.id === params?.id;
   });
 
+  const id = product[0].id;
   const title = product[0].title;
   const description = product[0].text;
   const content = product[0].content;
+  const type = product[0].type;
+  const url = product[0].url;
 
   return {
     props: {
+      id,
       title,
       description,
       content,
+      type,
+      url,
     },
     revalidate: 60 * 60 * 24,
   };

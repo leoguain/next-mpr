@@ -1,8 +1,1199 @@
 export const products = [
+  //PRODUTOS PORTO
+  {
+    id: "rastreador-porto-seguro",
+    title: "Rastreador Porto",
+    text: "Para lidar com possíveis situações, saiba mais sobre o Seguro Rastreador e solicite um orçamento.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/rastreador-mais-seguro/home.ns?susepw=1838WJ&origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_campaign=site_oncorretor_50565J&utm_content=mpr_corretora_de_seguros_ltda&susep=50565J",
+    type: "porto-monitoramento",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Rastreador Porto Seguro",
+        path: "rastreador-porto-seguro",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Ninguém quer vivenciar uma situação de roubo ou de furto do veículo, mas infelizmente não temos 100% de certeza de que isso nunca vá acontecer conosco. Para lidar com possíveis situações como essa, a melhor solução é prevenir e instalar um rastreador nele.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "Se você nunca precisar utilizá-lo, ótimo! Mas se o inesperado acontecer, ter um equipamento moderno instalado, que utiliza sistemas GPS e GPRS, aumenta a chance de localização com agilidade para trazer seu veículo de volta o mais rapidamente possível.",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "Se você não tiver seguro de automóvel, não tem importância. Você pode solicitar a instalação do rastreador assim mesmo, optando pela compra do equipamento ou pelo sistema de comodato. Em ambos os casos, pagará uma taxa fixa pelo monitoramento 24 horas por dia.",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraphN",
+        text: "CONFIRA AS VANTAGENS DO RASTREADOR:",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Central própria de atendimento 24 horas por dia;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Instalação e manutenção do rastreador;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Plataformas digitais;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Programa de relacionamento.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraphN",
+        text: "COMO FUNCIONA:",
+      },
+      {
+        id: "list_02",
+        type: "list",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "1. Contrate o Rastreador Porto Seguro - Até 5 veículos, contrate na plataforma de Venda Online. Para mais de 5 veículos, contate nossa Central de Atendimento.",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "2. Aguarde a conclusão da análise - É rápida. Concluímos em apenas 2 dias úteis.",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "3. Aguarde nosso contato para instalação - Mas se preferir, fale com a gente pelos telefones (11) 4004-2288 (regiões metropolitanas) ou 0800 727 0343 (demais regiões).",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "4. Comece a rastrear seu veículo - Após instalação completa, você poderá monitorar o seu veículo pelo App Rastreador Porto Seguro ou na Área do Cliente.",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "5. Fale com um de nossos colaboradores e veja como é simples contratar esse produto. Aguardamos seu contato. Será um prazer atendê-lo(a).",
+          },
+        ],
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraph",
+        text: "Pensou em seguro, realize agora mesmo uma cotação.",
+      },
+    ],
+  },
+  {
+    id: "seguro-vida",
+    title: "Seguro Vida",
+    text: "Você e sua família podem vivenciar os bons momentos no presente, com o futuro garantido.",
+    url: "",
+    type: "porto-vida",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Vida",
+        path: "seguro-vida",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Você e sua família podem vivenciar os bons momentos no presente, sabendo que o futuro também está garantido.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "As coberturas incluem indenização por morte e por acidentes para pessoas físicas, para profissionais e para colaboradores de pequenas e médias empresas.",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "São produtos diferentes que se adequam a diferentes perfis.",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "Além disso, o segurado conta com vários benefícios, como o Programa Bem Viver e descontos em eventos culturais, concorre a sorteio mensal de título de capitalização e tem assistência em viagens.",
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraphN",
+        text: " - Previdência Privada Individual e Infantil e Pequenas e Médias Empresas",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraph",
+        text: "Um bom plano de Previdência Privada Individual garante a complementação da aposentaria no futuro, para que você mantenha seu padrão de vida. Dessa forma, aplicando pequena quantia mensal, você saberá o que esperar ao final do período escolhido para começar a receber o benefício.",
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraph",
+        text: "Da mesma forma e sem que pese no seu bolso, no caso da Previdência Privada Infantil você deposita mensalmente determinado valor que poderá garantir, por exemplo, a formação escolar de seu filho.",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraph",
+        text: "Para que seus funcionários usufruam de renda complementar na aposentadoria, a opção é o Previdência Pequenas e Médias Empresas, que pode ser contratado por empresas, cooperativas, associações ou sindicatos e favorecer de 3 a 400 participantes.",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraph",
+        text: "Seguros pensados para atender às suas necessidades. Faça uma cotação e descubra como pode ser fácil obter essas vantagens.",
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraph",
+        text: "Fale com um de nossos corretores para saber mais sobre esses produtos e para contratá-los.",
+      },
+    ],
+  },
+  {
+    id: "seguro-vida-mais-simples",
+    title: "Seguro Vida Mais Simples",
+    text: "Simples para contratar, mas completo para proteger você e sua família.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/vidamaissimples/home.ns?susepw=1838WJ&origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_campaign=site_oncorretor_50565J&utm_content=mpr_corretora_de_seguros_ltda&susep=50565J",
+    type: "porto-vida",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Vida Mais Simples",
+        path: "seguro-vida-mais-simples",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Algumas coisas fazem a sua vida mais completa, mas poucas de maneira tão simples.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "Viver de maneira simples é aproveitar cada momento com muito mais segurança e tranquilidade. Nós temos a solução!",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "Sem burocracia e sem questionários de saúde, o Vida Mais Simples oferece coberturas diversas, descontos para mulheres e não fumantes e com valores baixos. Você ficará protegido a partir de R$4,00 por mês. O seguro pode ser contratado por pessoas em boas condições de saúde com idade entre 16 e 64 anos e têm opções de capitais entre 10 a 200 mil.",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "Você também conta a cobertura exclusiva de Despesas Imediatas, que garante o pagamento de despesas extras no valor de R$1.000,00.",
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraphN",
+        text: "Muito mais vantagens para você",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraph",
+        text: "Você ainda conta com o Clube Porto Seguro que proporciona descontos em uma ampla rede de parceiros, como: academias, farmácias, SPA’s, clínicas de estética, teatro, restaurantes, assistência 24 horas em viagens e muito mais.",
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraphN",
+        text: "Sorteios Mensais",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraph",
+        text: "Todos os meses, mantendo o pagamento do seu seguro em dia, você concorre a sorteios de 12 mil reais* pela Loteria Federal. Solicite uma proposta e proteja você e sua família agora mesmo!",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraphN",
+        text: "Principais Vantagens",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Reembolso Despesas Imediatas",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Titulo de Capitalização",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Assistência Funeral",
+          },
+        ],
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "Pensou em seguro, realize agora mesmo uma cotação.",
+      },
+    ],
+  },
+  {
+    id: "seguro-residencial",
+    title: "Seguro Residencial",
+    text: "Garantias, benefícios e todas as coberturas do seguro residencial, superando as expectativas.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/residencia/home.ns?susepw=1838WJ&origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_campaign=site_oncorretor_50565J&utm_content=mpr_corretora_de_seguros_ltda&susep=50565J#vo-lgpd-frm-step-identify",
+    type: "porto-imovel",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Residencial",
+        path: "seguro-residencial",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "O Seguro Residência foi feito para garantir o seu patrimônio e superar suas expectativas.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "Além de todas as coberturas de um completo seguro residencial, com garantias que vão desde danos elétricos, incêndio e roubo até responsabilidade civil, o serviço oferece vários benefícios para você e sua casa.",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraphN",
+        text: "COBERTURAS BÁSICAS:",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "INCÊNDIO, EXPLOSÃO E FUMAÇA.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraphN",
+        text: "COBERTURAS ADICIONAIS:",
+      },
+      {
+        id: "list_02",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "DANOS ELÉTRICOS",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "IMPACTO DE VEÍCULOS",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "VENDAVAL, FURACÃO, CICLONE, TORNADO E QUEDA DE GRANIZO ",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "QUEBRA DE VIDROS",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "RESPONSABILIDADE CIVIL FAMILIAR",
+          },
+          {
+            id: "listItem_06",
+            type: "listItem",
+            text: "SUBTRAÇÃO DE BENS",
+          },
+          {
+            id: "listItem_07",
+            type: "listItem",
+            text: "ESCRITÓRIO EM RESIDÊNCIA",
+          },
+          {
+            id: "listItem_08",
+            type: "listItem",
+            text: "PERDA OU PAGAMENTO DE ALUGUEL",
+          },
+          {
+            id: "listItem_09",
+            type: "listItem",
+            text: "DESMORONAMENTO",
+          },
+          {
+            id: "listItem_10",
+            type: "listItem",
+            text: "VAZAMENTO DE TUBULAÇÕES",
+          },
+        ],
+      },
+      {
+        id: "paragraph_06",
+        type: "note",
+        text: "Somente para residências habituais e ocupadas.",
+      },
+      {
+        id: "paragraph_07",
+        type: "note",
+        text: "Cobertura válida também para residências de veraneio.",
+      },
+      {
+        id: "paragraph_08",
+        type: "note",
+        text: "Para informações detalhadas, exclusão de cobertura e restrição de contratação, consulte as condições gerais do produto.",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraphN",
+        text: "SERVIÇOS DISPONIVEIS 24H:",
+      },
+      {
+        id: "list_03",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "CHAVEIRO",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "ENCANADOR E ELETRICISTA",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "REPAROS EM MÁQUINA DE LAVAR ROUPA, LAVA LOUÇAS, GELADEIRA E FOGÃO",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "INSTALAÇÃO DE VENTILADOR DE TETO, VARAL, PRATELEIRAS E SUPORTE PARA TV",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "LIMPEZA DE CALHAS E CAIXA D'ÁGUA E ETC",
+          },
+        ],
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_12",
+        type: "paragraphN",
+        text: "TEMOS A OPÇÃO MAIS ADEQUADA PARA VOCÊ:",
+      },
+      {
+        id: "list_04",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "SEGURO RESIDÊNCIA HABITUAL - Mais de 10 coberturas para você escolher, serviços úteis para sua casa, descontos e muito mais.",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "SEGURO APARTAMENTOS - Coberturas específicas para quem mora em apartamento.",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "SEGURO RESIDÊNCIA PREMIUM - Ainda mais proteção para casas ou apartamentos de alto padrão, além de serviços exclusivos.",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "SEGURO RESIDÊNCIA VERANEIO - Coberturas e serviços sob medida para você aproveitar sua casa de praia ou campo com mais tranquilidade.",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "SEGURO RESIDENCIAL SIMPLIFICADO - Seguro descomplicado e com preço reduzido para proteger sua casa em caso de sinistro.",
+          },
+        ],
+      },
+
+      {
+        id: "paragraph_13",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_14",
+        type: "paragraph",
+        text: "O seguro que você procura está aqui! Faça uma cotação agora mesmo e descubra como pode ser acessível estar em segurança.",
+      },
+    ],
+  },
+  {
+    id: "seguro-equipamentos-portateis",
+    title: "Seguro Equipamentos Portáteis",
+    text: "Seus equipamentos portáteis também precisam de proteção.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/equipamentosportateis/home.ns?susepw=1838WJ&origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_term=mprseg.com.br&utm_content=mpr_corretora_de_seguros_ltda&utm_campaign=site_oncorretor_50565J&susep=50565J#vo-lgpd-frm-step-identify",
+    type: "porto-equipamentos",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Equipamentos Portáteis",
+        path: "seguro-equipamentos-portateis",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Você já pensou em contratar um seguro para seu notebook, smartphone (iPhone, BlackBerry, etc.), iPad ou outros modelos de tablets, câmera fotográficas e filmadoras e assim garantir a reposição do equipamento em caso de danos ou roubo?",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "Para você que se locomove com frequência e não quer correr o risco de ficar sem sua ferramenta de trabalho e comunicação, desenvolvemos o Seguro para Equipamentos Portáteis, que garante a reposição do seu equipamento no caso de incêndio, raio, explosão e impacto de veículos terrestres e aeronaves. Você também pode contratar a cobertura opcional para subtração de bens e danos elétricos, além de garantia internacional.",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraphN",
+        text: "PRODUTOS SEGURADOS:",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "SMARTPHONE",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "SMARTWATCH",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "TABLETS",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "NOTEBOOKS",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "MÁQUINAS FOTOGRÁFICAS E FILMADORAS",
+          },
+        ],
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraphN",
+        text: "PRINCIPAIS GARANTIAS:",
+      },
+      {
+        id: "list_02",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Caso de acidente",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Caso de incêndio",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Queda de raio",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Dano na tentativa de roubo",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Impacto de veículos",
+          },
+        ],
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraphN",
+        text: "Documentos necessários para contratação do seguro:",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraphU",
+        text: "Para equipamentos adquiridos fora do Brasil:",
+      },
+      {
+        id: "list_03",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: 'Quando adquirido no exterior, a cotação do equipamento deve ser realizada em moeda nacional e informada no campo "Valor da Nota Fiscal”;',
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Em caso de documentos em língua estrangeira, diferente do inglês, será necessário documento com as especificações da marca, modelo e número de série.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraphU",
+        text: "Para equipamentos em que a Nota Fiscal está em nome de terceiros:",
+      },
+      {
+        id: "list_04",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Em caso de Nota Fiscal com nome diferente do segurado, será exigida carta de doação ou documento que comprove a aquisição.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_12",
+        type: "paragraph",
+        text: "Simples de adquirir, completamente seguro. Descubra agora mesmo mais benefícios deste produto Porto.",
+      },
+    ],
+  },
+  {
+    id: "seguro-viagem",
+    title: "Seguro Viagem",
+    text: "Viajar é uma delícia! Com proteção e vantagens exclusivas, fica bem melhor, viaje com segurança.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/viagem/home.ns?susepw=1838WJ&origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_campaign=site_oncorretor_50565J&utm_content=mpr_corretora_de_seguros_ltda&susep=50565J",
+    type: "porto-viagem",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Viagem",
+        path: "seguro-viagem",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Você está planejando viajar? Já escolheu um roteiro no Brasil ou no exterior? Vai sozinho(a) ou acompanhado(a)? Independentemente das características de sua viagem, o seguro viagem é para você. ",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "Com ele você tem coberturas que lhe deixarão muito mais tranquilo(a) para curtir tudo. Veja quais são elas:",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Acidentes pessoais;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Cancelamento de viagem;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Interrupção da viagem;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Extravio de bagagem.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraph",
+        text: "Você pode escolher um plano de acordo com destino e a região do mundo que vai visitar e também com o tempo de permanência. E conforme sua opção, os serviços de assistência formam uma longa lista para você realmente se preocupar apenas em aproveitar todas as experiências, tirar fotos e filmar e voltar para casa com muitas histórias para contar. Confira:",
+      },
+      {
+        id: "list_02",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Assistência médica em caso de acidente e de enfermidade;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Fisioterapia;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Extensão do período de internação pós-vencimento do voucher;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Assistência odontológica e farmacêutica;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Hospedagem em hotel após alta hospitalar;",
+          },
+          {
+            id: "listItem_06",
+            type: "listItem",
+            text: "Remoção inter-hospitalar;",
+          },
+          {
+            id: "listItem_07",
+            type: "listItem",
+            text: "Retorno ao domicílio após alta hospitalar;",
+          },
+          {
+            id: "listItem_08",
+            type: "listItem",
+            text: "Visita a usuário internado;",
+          },
+          {
+            id: "listItem_09",
+            type: "listItem",
+            text: "Garantia de viagem de regresso;",
+          },
+          {
+            id: "listItem_10",
+            type: "listItem",
+            text: "Assistência jurídica;",
+          },
+          {
+            id: "listItem_11",
+            type: "listItem",
+            text: "Adiantamento para pagamento de fiança e muito mais. ",
+          },
+        ],
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraph",
+        text: "Você ainda conta com uma assessoria em viagem à sua disposição 24 horas por dia, oferecendo-lhe um atendimento personalizado para reserva de hotéis e de restaurantes, além da possibilidade de comprar ingressos para espetáculos de entretenimento, para museus etc.",
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraph",
+        text: "Os serviços oferecidos dividem-se em:",
+      },
+      {
+        id: "list_03",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Viagem - para ajudar na escolha do destino e na organização de pacotes de acordo com seu perfil (luxo, exótico, remoto, ecoturismo, negócios, esportes de aventura ou de inverno, fim de semana, feriados prolongados, cruzeiros e safáris);",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Entretenimento e cultura - agenda cultural, entradas, eventos culturais, artísticos, sociais e familiares;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Gastronomia e enologia - indicação e reserva em restaurantes, experiências gastronômicas, personal chef, degustação de vinhos, indicação de estabelecimentos comerciais e curso de formação de sommelier;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "+ Experiências - cursos de golfe, clínicas de tênis, aulas de dança, paraquedismo, bungee jump, passeio de balão, mergulho e experiências automobilísticas e para crianças;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Suporte ao executivo - em viagens nacionais, locação de equipamentos, escritório virtual, sala de convenção, indicação de tradutor ou de intérprete, busca de profissionais para serviços diversos etc.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraph",
+        text: "E você ainda tem descontos na locação de veículos e no hotelzinho para deixar seu animal de estimação.",
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraph",
+        text: "Viu só quantas vantagens num só produto? Apostamos que você ficou com mais vontade de viajar agora.",
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "Então, entre em contato conosco. Nossos colaboradores estão à disposição para ajudá-lo(a) na contratação do seguro viagem. Será um prazer atendê-lo(a).",
+      },
+      {
+        id: "paragraph_12",
+        type: "paragraph",
+        text: "O seguro que você procura está aqui! Faça uma cotação agora mesmo e descubra como pode ser acessível estar em segurança.",
+      },
+    ],
+  },
+  {
+    id: "seguro-auto",
+    title: "Seguro Auto",
+    text: "Para proteger seu veículo, você também pode usufruir de uma série de vantagens.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/automovel/home.ns?susepw=1838WJ&amp;origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_campaign=site_oncorretor_50565J&utm_content=mpr_corretora_de_seguros_ltda&susep=50565J#vo-lgpd-frm-step-identify",
+    type: "porto-auto",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Auto",
+        path: "seguro-auto",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Nada melhor do que dirigir com tranquilidade, sabendo que seu veículo está protegido. Isso acontece quando você conta com um seguro de automóvel que considera seu perfil e oferece coberturas opcionais para você escolher de acordo com suas necessidades.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraph",
+        text: "E como isso acontece?",
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "Pense no seu perfil de motorista na hora de solicitar uma cotação - qual é sua idade? Qual o seu gênero - masculino ou feminino? Depois, procure um produto que tenha mais a ver com você, que considere essas características e avalie as coberturas que ele oferece.",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraphN",
+        text: "As coberturas básicas geralmente incluem: ",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Colisão, incêndio e roubo/furto; ",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Danos a terceiros;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Proteção a passageiros.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_05",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraphN",
+        text: "Entre as opcionais estão:",
+      },
+      {
+        id: "list_02",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Carro extra;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Carta Verde (para ingressar em países do Mercosul); ",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Reembolso de despesas extraordinárias;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Lucros cessantes;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Seguro da franquia;",
+          },
+          {
+            id: "listItem_06",
+            type: "listItem",
+            text: "Proteção aos vidros e aos acessórios e muito mais.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_07",
+        type: "note",
+        text: "Considere também que vantagens acompanham o produto que você escolher. Alguns oferecem serviços e benefícios não só para seu veículo, mas também para você, para sua residência e até para seu animal de estimação.",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraphN",
+        text: "Você poderá contar, por exemplo, com:",
+      },
+      {
+        id: "list_03",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Descontos em estacionamentos e em aluguel de veículos;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Centros automotivos e oficinas referenciadas que oferecem descontos especiais;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Assistência 24 horas em viagens nacionais e internacionais;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Desconto extra na franquia;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Consertos gratuitos em eletrodomésticos de linha branca e outros serviços à residência;",
+          },
+          {
+            id: "listItem_06",
+            type: "listItem",
+            text: "Reparos em aparelhos de ar condicionado;",
+          },
+          {
+            id: "listItem_07",
+            type: "listItem",
+            text: "Assistência para computador e para notebook;",
+          },
+          {
+            id: "listItem_08",
+            type: "listItem",
+            text: "Descontos em clínicas veterinárias para seu animal de estimação;",
+          },
+          {
+            id: "listItem_09",
+            type: "listItem",
+            text: "Descontos em restaurantes e em eventos culturais;",
+          },
+          {
+            id: "listItem_10",
+            type: "listItem",
+            text: "Descontos em cursos de inglês e muito mais.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "Oferecemos consultoria para ajudar a encontrar o produto ideal. Juntos, faremos simulações e você poderá comparar as vantagens e os benefícios que cada um oferece.",
+      },
+      {
+        id: "paragraph_12",
+        type: "paragraph",
+        text: "O seguro que você procura está aqui! Faça uma cotação agora mesmo e descubra como pode ser acessível estar em segurança.",
+      },
+    ],
+  },
+  {
+    id: "seguro-moto",
+    title: "Seguro Moto",
+    text: "O seguro que combina com seu estilo, com cobertura completa e assistência 24h.",
+    url: "https://wwws.portoseguro.com.br/vendaonline/moto/home.ns?susepw=1838WJ&origem=OnCorretor&utm_source=50565J&utm_medium=OnCorretor&utm_term=mprseg.com.br&utm_content=mpr_corretora_de_seguros_ltda&utm_campaign=site_oncorretor_50565J&susep=50565J#vo-lgpd-frm-step-identify",
+    type: "porto-auto",
+    content: [
+      {
+        id: "banner_01",
+        type: "banner",
+        text: "Seguro Moto",
+        path: "seguro-moto",
+      },
+      {
+        id: "paragraph_01",
+        type: "paragraph",
+        text: "Você gosta de pilotar sua moto estradeira ou que tenha mais de 90cc e de sair por aí com mais liberdade? Essa é a sensação o veículo proporciona e você pode combinar esse prazer com mais tranquilidade, contratando um seguro que garanta a proteção que você precisa na cidade ou na estrada.",
+      },
+      {
+        id: "paragraph_02",
+        type: "paragraphN",
+        text: "COBERTURAS BÁSICAS E OPCIONAIS COMO:",
+      },
+      {
+        id: "list_01",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Colisão, incêndio e roubo/furto;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Carro extra em caso de sinistro;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Capacete, jaqueta, botas, luvas, calça e intercomunicador;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Danos a terceiros;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Dano parcial ou sinistro de indenização integral ao veículo devido a incêndio, roubo e furto. Não contempla colisão.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_03",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_04",
+        type: "paragraphN",
+        text: "COM O SEGURO MOTO VOCÊ TEM:",
+      },
+
+      {
+        id: "paragraph_05",
+        type: "paragraphU",
+        text: "Serviços emergenciais e de manutenção para sua casa",
+      },
+      {
+        id: "paragraph_06",
+        type: "paragraph",
+        text: "Mão de obra gratuita com segurança e qualidade para:",
+      },
+      {
+        id: "list_02",
+        type: "iconlist",
+        texts: [
+          {
+            id: "listItem_01",
+            type: "listItem",
+            text: "Conserto de eletrodomésticos;",
+          },
+          {
+            id: "listItem_02",
+            type: "listItem",
+            text: "Reparos nas redes elétrica e hidráulica;",
+          },
+          {
+            id: "listItem_03",
+            type: "listItem",
+            text: "Help desk;",
+          },
+          {
+            id: "listItem_04",
+            type: "listItem",
+            text: "Desentupimento;",
+          },
+          {
+            id: "listItem_05",
+            type: "listItem",
+            text: "Limpeza de calhas;",
+          },
+          {
+            id: "listItem_06",
+            type: "listItem",
+            text: "Chaveiro comum.",
+          },
+        ],
+      },
+      {
+        id: "paragraph_07",
+        type: "paragraph",
+        text: "",
+      },
+      {
+        id: "paragraph_08",
+        type: "paragraphU",
+        text: "Extensão de perímetro gratuita",
+      },
+      {
+        id: "paragraph_09",
+        type: "paragraph",
+        text: "Extensão de perímetro, nos países do Mercosul, com cobertura gratuita, em caso de danos ocasionados exclusivamente à moto.",
+      },
+      {
+        id: "paragraph_10",
+        type: "paragraphU",
+        text: "Reposição do valor da moto 0km por até 6 meses",
+      },
+      {
+        id: "paragraph_11",
+        type: "paragraph",
+        text: "Nos casos de indenização integral, você tem garantia de até 6 meses para a reposição da moto pelo valor de 0km. Válido para seguros contratados na modalidade de valor de mercado, de acordo com o tipo de moto, modelo, região e condições de contratação.",
+      },
+      {
+        id: "paragraph_12",
+        type: "paragraph",
+        text: "Consulte as Condições Gerais.",
+      },
+      {
+        id: "paragraph_13",
+        type: "paragraph",
+        text: "O benefício é válido de acordo com as cilindradas da moto ou cláusula contratada.",
+      },
+      {
+        id: "paragraph_14",
+        type: "paragraph",
+        text: "Seguros pensados para atender às suas necessidades. Faça uma cotação e descubra como pode ser fácil obter essas vantagens.",
+      },
+      {
+        id: "paragraph_15",
+        type: "paragraph",
+        text: "Fale com nossa corretora e, na oportunidade, tire suas dúvidas e faça simulações. Será um prazer atendê-lo(a).",
+      },
+    ],
+  },
+
+  //PRODUTOS CORRETORA
   {
     id: "consorcio-de-imoveis",
     title: "Consórcio de Imóveis",
     text: "Com o consórcio imóvel você pode: comprar casa ou apartamento, construir, reformar ou comprar um terreno com parcelas acessíveis e sem juros.",
+    url: "",
+    type: "mpr-consorcio-imovel",
     content: [
       {
         id: "banner_01",
@@ -76,6 +1267,8 @@ export const products = [
     id: "seguro-notebook",
     title: "Seguro para Notebook",
     text: "O seguro proporciona a reposição do seu equipamento em casos de danos ou roubo.",
+    url: "",
+    type: "mpr-equipamentos",
     content: [
       {
         id: "banner_01",
@@ -104,6 +1297,8 @@ export const products = [
     id: "seguro-auto-senior",
     title: "Seguro Auto Sênior",
     text: "São diversas vantagens para quem tem a partir de 60 anos!",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -376,6 +1571,8 @@ export const products = [
     id: "seguro-acidentes-pessoais-escolar",
     title: "Seguro de Acidentes Pessoais Escolar",
     text: "Proteção e assistência para alunos. Tranquilidade para pais, responsáveis e estabelecimentos de ensino.",
+    url: "",
+    type: "mpr-acidente",
     content: [
       {
         id: "banner_01",
@@ -450,6 +1647,8 @@ export const products = [
     id: "seguro-acidentes-pessoais-plus",
     title: "Seguro de Acidentes Pessoais Plus",
     text: "Vantagens e benefícios exclusivos para dar mais tranquilidade e segurança para você e sua família em casos de acidentes.",
+    url: "",
+    type: "mpr-acidente",
     content: [
       {
         id: "banner_01",
@@ -534,6 +1733,8 @@ export const products = [
     id: "seguro-acidentes-pessoais-individual-prazo-curto",
     title: "Seguro de Acidentes Pessoais Individual Prazo Curto",
     text: "Para sua tranquilidade, proteção e auxílio completo em casos de acidente.",
+    url: "",
+    type: "mpr-acidente",
     content: [
       {
         id: "banner_01",
@@ -619,6 +1820,8 @@ export const products = [
     id: "seguro-auto-mulher",
     title: "Seguro Auto Mulher",
     text: "Um seguro que além de proteger o seu automóvel e também cuida de você.",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -828,6 +2031,8 @@ export const products = [
     id: "seguro-apartamentos",
     title: "Seguro Apartamentos",
     text: "O Seguro Apartamentos foi criado para atender os moradores desse tipo de imóvel, oferecendo coberturas.",
+    url: "",
+    type: "mpr-imovel",
     content: [
       {
         id: "banner_01",
@@ -980,6 +2185,8 @@ export const products = [
     id: "consorcio-veiculos",
     title: "Consórcio de Veículos",
     text: "Adquirir ou trocar seu carro fica bem mais fácil quando você tem o capital para esse investimento.",
+    url: "",
+    type: "mpr-consorcio-auto",
     content: [
       {
         id: "banner_01",
@@ -1257,6 +2464,8 @@ export const products = [
     id: "seguro-auto-pequenas-empresas",
     title: "Seguro Auto Pequenas Empresas",
     text: "Os veículos da sua empresa protegidos e com benefícios exclusivos.",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -1392,6 +2601,8 @@ export const products = [
     id: "seguro-condominio",
     title: "Seguro Condomínio",
     text: "Com Seguro Condomínio você deixa de se preocupar com eventuais problemas e ainda acumula vantagens.",
+    url: "",
+    type: "mpr-imovel",
     content: [
       {
         id: "banner_01",
@@ -1456,6 +2667,8 @@ export const products = [
     id: "consorcio",
     title: "Consórcio",
     text: "A realização dos seus sonhos fica mais fácil com um plano de consórcio.",
+    url: "",
+    type: "mpr-consorcio",
     content: [
       {
         id: "banner_01",
@@ -1561,6 +2774,8 @@ export const products = [
     id: "seguro-residencia-premium",
     title: "Seguro Residência Premium",
     text: "O Seguro Residência Premium oferece coberturas que garantem maior proteção para a sua residência, incluindo garantias para obras de arte, joias e relógios, danos ao jardim, danos causados aos empregados, entre outras.",
+    url: "",
+    type: "mpr-imovel",
     content: [
       {
         id: "banner_01",
@@ -1693,6 +2908,8 @@ export const products = [
     id: "seguro-vida-mais-mulher",
     title: "Seguro de Vida Mais Mulher",
     text: "Enquanto você cuida da casa, dos negócios e das pessoas que você mais ama, o Seguro Vida Mais Mulher cuida de você.",
+    url: "",
+    type: "mpr-vida",
     content: [
       {
         id: "banner_01",
@@ -1762,6 +2979,8 @@ export const products = [
     id: "seguro-residencial-facil",
     title: "Seguro Residencial Fácil",
     text: "Um seguro descomplicado, que ampara seu lar e seus bens com coberturas indispensáveis.",
+    url: "",
+    type: "mpr-imovel",
     content: [
       {
         id: "banner_01",
@@ -1857,6 +3076,8 @@ export const products = [
     id: "seguro-camera-fotografica",
     title: "Seguro para Câmera Fotográfica",
     text: "O seguro para proporcionar a reposição do seu equipamento em casos de danos ou roubo.",
+    url: "",
+    type: "mpr-equipamentos",
     content: [
       {
         id: "banner_01",
@@ -1890,6 +3111,8 @@ export const products = [
     id: "seguro-residencia-veraneio",
     title: "Seguro Residência Veraneio",
     text: "Proteção e serviços para você aproveitar o seu cantinho na praia ou no campo.",
+    url: "",
+    type: "mpr-imovel",
     content: [
       {
         id: "banner_01",
@@ -2026,6 +3249,8 @@ export const products = [
     id: "seguro-tablet",
     title: "Seguro para Tablet",
     text: "O seguro para tablets oferece a reposição do seu aparelho em casos de danos ou roubo. Saiba mais sobre o serviço.",
+    url: "",
+    type: "mpr-equipamentos",
     content: [
       {
         id: "banner_01",
@@ -2064,6 +3289,8 @@ export const products = [
     id: "seguro-auto-jovem",
     title: "Seguro Auto Jovem",
     text: "O seguro para você que tem um longo caminho pela frente, além de proteger seu carro, tem vantagens.",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -2232,6 +3459,8 @@ export const products = [
     id: "seguro-residencia-habitual",
     title: "Seguro Residência Habitual",
     text: "O Seguro Residência foi feito para garantir o seu patrimônio e superar suas expectativas.",
+    url: "",
+    type: "mpr-imovel",
     content: [
       {
         id: "banner_01",
@@ -2357,6 +3586,8 @@ export const products = [
     id: "seguro-filmadora",
     title: "Seguro para Filmadora",
     text: "O seguro para filmadora garante a reposição do seu equipamento em casos de danos ou roubo.",
+    url: "",
+    type: "mpr-equipamentos",
     content: [
       {
         id: "banner_01",
@@ -2390,6 +3621,8 @@ export const products = [
     id: "seguro-vida-pequenas-medias-empresas",
     title: "Seguro de Vida Pequenas e Médias Empresas",
     text: "O Seguro de Vida Pequenas e Médias Empresas oferece proteção, diversas vantagens e benefícios.",
+    url: "",
+    type: "mpr-vida",
     content: [
       {
         id: "banner_01",
@@ -2484,6 +3717,8 @@ export const products = [
     id: "seguro-celular",
     title: "Seguro para Celular",
     text: "O serviço dá a tranquilidade necessária em casos de danos físicos no aparelho ou de roubos.",
+    url: "",
+    type: "mpr-equipamentos",
     content: [
       {
         id: "banner_01",
@@ -2630,6 +3865,8 @@ export const products = [
     id: "seguro-vida-grupo",
     title: "Seguro de Vida em Grupo",
     text: "Você pensa no futuro dos seus colaboradores e eles investem no presente da sua empresa.",
+    url: "",
+    type: "mpr-vida",
     content: [
       {
         id: "banner_01",
@@ -2714,6 +3951,8 @@ export const products = [
     id: "seguro-caminhao",
     title: "Seguro Caminhão",
     text: "O Seguro Caminhão garante coberturas e serviços que atendem a sua necessidade.",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -2990,6 +4229,8 @@ export const products = [
     id: "seguro-taxi",
     title: "Seguro Táxi",
     text: "O seguro que oferece serviços gratuitos, assistência rápida e descontos especiais para taxistas.",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -3118,6 +4359,8 @@ export const products = [
     id: "seguro-convencoes-coletivas",
     title: "Seguro para Convenções Coletivas",
     text: "Uma empresa de sucesso se preocupa com o bem-estar e com o futuro de seus colaboradores.",
+    url: "",
+    type: "mpr-vida",
     content: [
       {
         id: "banner_01",
@@ -3191,6 +4434,8 @@ export const products = [
     id: "seguro-auto-premium",
     title: "Seguro Auto Premium",
     text: "Exclusivo, como você. Rede de oficinas premium, assistência 24h, concierge, entre outros diferenciais.",
+    url: "",
+    type: "mpr-auto",
     content: [
       {
         id: "banner_01",
@@ -3411,6 +4656,8 @@ export const products = [
     id: "seguro-vida-individual",
     title: "Seguro de Vida Individual",
     text: "O Seguro Vida Individual garante a sua tranquilidade e a de sua família, agora e no futuro.",
+    url: "",
+    type: "mpr-vida",
     content: [
       {
         id: "banner_01",
@@ -3480,6 +4727,8 @@ export const products = [
     id: "alarmes-monitoramento",
     title: "Alarmes e Monitoramento",
     text: "Proteção, rastreamento e monitoramento para seus bens imóveis e para suas cargas.",
+    url: "",
+    type: "mpr-monitoramento",
     content: [
       {
         id: "banner_01",
