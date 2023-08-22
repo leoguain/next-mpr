@@ -30,6 +30,8 @@ export const ProductsCheckbox = ({ products }: ProductsProps) => {
 
   let [activeProducts, setActiveProducts] = useState(filterProducts);
 
+  let countProducts = filterProducts.length + " produtos selecionados.";
+
   const onSwitchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.checked) {
       activeFilter.push(event.target.value);
@@ -56,6 +58,9 @@ export const ProductsCheckbox = ({ products }: ProductsProps) => {
             <AccordionButton justifyContent={"space-between"}>
               <Text color={"primary.500"} fontSize="2xl" mt={4}>
                 Filtro
+              </Text>
+              <Text color={"primary.500"} fontSize={["xs", "md", "lg"]} mt={4}>
+                {countProducts}
               </Text>
               <AccordionIcon boxSize={8} color="primary.500" />
             </AccordionButton>

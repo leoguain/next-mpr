@@ -12,8 +12,6 @@ import React from "react";
 export const Header = () => {
   const { menuItems, isMobile } = useHeader();
 
-  //opacity={"0.8"}
-
   return (
     <>
       <Flex
