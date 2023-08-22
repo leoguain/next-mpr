@@ -1,8 +1,6 @@
 import React from "react";
 import { Breadcrumb } from "../Breadcrumb";
-
 import { Flex, Text } from "@chakra-ui/react";
-
 import { TitleProps } from "./types";
 
 export const PageTitle = ({ pageTitle, pageUrl }: TitleProps) => {
@@ -21,7 +19,7 @@ export const PageTitle = ({ pageTitle, pageUrl }: TitleProps) => {
       >
         {pageTitle}
       </Text>
-      <Breadcrumb url={pageUrl} oldSeparator="-" newSeparator=" " />
+      <Breadcrumb url={pageUrl} title={pageTitle} />
     </Flex>
   );
 };

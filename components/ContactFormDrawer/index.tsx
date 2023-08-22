@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import {
   Flex,
@@ -12,14 +11,12 @@ import {
 } from "@chakra-ui/react";
 
 import { ContactForm } from "components/ContactForm";
-
 interface SelectedIdProps {
   selectedId?: string;
 }
 
 export const ContactFormDrawer = ({ selectedId }: SelectedIdProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
 
   return (
     <Flex flexDirection={"column"} mb={4}>

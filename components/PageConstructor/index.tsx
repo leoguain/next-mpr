@@ -12,6 +12,7 @@ import { Columns } from "./components/Columns";
 import { LinkBox } from "./components/LinkBox";
 import { IconTextList } from "./components/IconTextList";
 import { TextList } from "./components/TextList";
+import { ThumbsCarousel } from "./components/ThumbsCarousel";
 
 export const PageConstructor = ({ text }: TextsProps) => {
   const bannerProductsFile = "/productsBanners/";
@@ -125,6 +126,12 @@ export const PageConstructor = ({ text }: TextsProps) => {
 
           <When value={type === "iconlist"}>
             <IconTextList list={texts} />
+          </When>
+
+          <When value={type === "thumbsCarousel"}>
+            <Box display="flex" justifyContent="center">
+              <ThumbsCarousel selectedItem={text} />
+            </Box>
           </When>
 
           {/*- MÍDIAS ----------------------------------------------*/}

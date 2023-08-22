@@ -33,7 +33,7 @@ function Product({
   return (
     <React.Fragment>
       <Head>
-        <title>{title}</title>
+        <title>{"MPR - " + title}</title>
         <meta name={title} content={description} />
       </Head>
 

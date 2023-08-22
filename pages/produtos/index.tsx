@@ -20,14 +20,13 @@ function Produtos({
   return (
     <>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{"MPR - " + pageTitle}</title>
         <meta name={pageTitle} content={description} />
       </Head>
 
       <Page title={pageTitle} description={description}>
         <Content>
           <PageTitle pageTitle={pageTitle} pageUrl={asPath} />
-
           <ProductsCheckbox products={products} />
         </Content>
       </Page>
@@ -36,7 +35,7 @@ function Produtos({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageTitle = "MPR - Produtos";
+  const pageTitle = "Produtos";
   const description =
     "Conheça os produtos com que trabalhamos. Temos as opções certas para você.";
 

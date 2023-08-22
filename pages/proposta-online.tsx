@@ -18,7 +18,7 @@ function PropostaOnline({
   return (
     <React.Fragment>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{"MPR - " + pageTitle}</title>
         <meta name={pageTitle} content={description} />
       </Head>
 
@@ -33,7 +33,7 @@ function PropostaOnline({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageTitle = "MPR - Solicite uma proposta";
+  const pageTitle = "Solicite uma proposta";
   const description = "Solicite uma cotação de nossos produtos.";
 
   return {

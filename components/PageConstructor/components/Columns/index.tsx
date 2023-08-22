@@ -10,7 +10,7 @@ export const Columns = ({ columns }: ColumnsProps) => {
     <Flex
       maxWidth={"7xl"}
       mx="auto"
-      my={2}
+      my={4}
       gap={8}
       flexDirection={["column", "column", "column", "row"]}
     >

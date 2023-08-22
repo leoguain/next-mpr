@@ -67,8 +67,8 @@ export const getStaticProps: GetStaticProps = async () => {
             {
               id: "video_02",
               type: "video",
-              text: "Porto Seguro Saúde",
-              path: "https://www.youtube.com/embed/M8F7ZmMVk6Q",
+              text: "Seguro Celular",
+              path: "https://www.youtube.com/embed/42u3iuD1amw",
             },
           ],
         },
@@ -79,8 +79,36 @@ export const getStaticProps: GetStaticProps = async () => {
             {
               id: "video_03",
               type: "video",
-              text: "Seguro Celular",
-              path: "https://www.youtube.com/embed/42u3iuD1amw",
+              text: "Saúde Ocupacional",
+              path: "https://www.youtube.com/embed/GlSNq8TlzgU",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "columns_01",
+      type: "columns",
+      texts: [
+        {
+          id: "column_01",
+          type: "column",
+          texts: [
+            {
+              id: "thumbsCarousel_01",
+              type: "thumbsCarousel",
+              text: "consorcio",
+            },
+          ],
+        },
+        {
+          id: "column_02",
+          type: "column",
+          texts: [
+            {
+              id: "thumbsCarousel_02",
+              type: "thumbsCarousel",
+              text: "equipamentos",
             },
           ],
         },

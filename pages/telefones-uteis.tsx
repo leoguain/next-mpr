@@ -22,7 +22,7 @@ function TelefonesUteis({
   return (
     <React.Fragment>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{"MPR - " + pageTitle}</title>
         <meta name={pageTitle} content={description} />
       </Head>
 
@@ -38,7 +38,7 @@ function TelefonesUteis({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageTitle = "MPR - Telefones úteis";
+  const pageTitle = "Telefones úteis";
   const description = "Telefones úteis quando precisar de atendimento.";
 
   return {

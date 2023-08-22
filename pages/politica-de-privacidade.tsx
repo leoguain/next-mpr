@@ -22,7 +22,7 @@ function PoliticaPrivacidade({
   return (
     <React.Fragment>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{"MPR - " + pageTitle}</title>
         <meta name={pageTitle} content={description} />
       </Head>
 
@@ -38,7 +38,7 @@ function PoliticaPrivacidade({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageTitle = "MPR - Política de privacidade";
+  const pageTitle = "Política de privacidade";
   const description = "Saiba mais sobre nossa política de privacidade.";
 
   return {

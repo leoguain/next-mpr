@@ -22,7 +22,7 @@ function QuemSomos({
   return (
     <React.Fragment>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{"MPR - " + pageTitle}</title>
         <meta name={pageTitle} content={description} />
       </Head>
 
@@ -38,7 +38,7 @@ function QuemSomos({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const pageTitle = "MPR - Quem somos";
+  const pageTitle = "Quem somos";
   const description = "Saiba mais sobre a MPR, nossa missão e valores.";
 
   return {

@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 
-import { MOBILE_BREAKPOINT } from "../../../../lib/constants";
+import { MOBILE_BREAKPOINT } from "../../../../../lib/constants";
 
-import { useWindowSize } from "../../../../hooks/useWindowsSize";
+import { useWindowSize } from "../../../../../hooks/useWindowsSize";
 
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
