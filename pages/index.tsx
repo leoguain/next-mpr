@@ -8,14 +8,12 @@ import { Content } from "components/Content";
 
 import Fab from "../components/FAB";
 
-import { products } from "../hooks/useProducts";
 import { ProductsCarousel } from "components/ProductsCarousel";
 import { PageConstructor } from "components/PageConstructor";
 
 function Home({
   pageTitle,
   description,
-  products,
   texts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -29,7 +27,7 @@ function Home({
         <Fab />
         <Content>
           <React.Fragment>
-            <ProductsCarousel products={products} />
+            <ProductsCarousel />
             <PageConstructor text={texts} />
           </React.Fragment>
         </Content>
@@ -108,7 +106,7 @@ export const getStaticProps: GetStaticProps = async () => {
             {
               id: "thumbsCarousel_02",
               type: "thumbsCarousel",
-              text: "equipamentos",
+              text: "monitoramento",
             },
           ],
         },
@@ -120,7 +118,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       pageTitle,
       description,
-      products: products,
       texts,
     },
     revalidate: 60 * 60 * 24, // 24 hours
@@ -128,3 +125,21 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 export default Home;
+
+/*
+import CookieConsent from "react-cookie-consent";
+
+
+<CookieConsent
+          location="bottom"
+          buttonText="Entendido!"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: "#2B373B" }}
+          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+          expires={150}
+        >
+          <Text color="#fff">
+            Este site utiliza cookies para otimizar a experiência do usuário.{" "}
+          </Text>
+        </CookieConsent>
+        */

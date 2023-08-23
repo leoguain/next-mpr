@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 import { Flex, Box, Text } from "@chakra-ui/react";
-
 import Slider from "react-slick";
-import { ProductsProps } from "components/ProductsCheckbox/types";
+
+import { products } from "../../hooks/useProducts";
 
 const settings = {
   dots: true,
@@ -18,11 +18,11 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export const ProductsCarousel = ({ products }: ProductsProps) => {
+export const ProductsCarousel = () => {
   const bannerProductsFile = "/productsBanners/";
   const page = "/produtos/";
 
-  let filterOptions = ["Seguro Auto", "Seguro Viagem", "Seguro Vida"];
+  let filterOptions = ["Seguro Auto Premium", "Seguro Viagem", "Seguro Vida"];
 
   let filterProducts = products.filter((product) =>
     filterOptions.includes(product.title)
