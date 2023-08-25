@@ -6,7 +6,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from "next";
 import { Page } from "components/Page";
 import { Content } from "components/Content";
 
-import Fab from "../components/FAB";
+import { FAB } from "../components/FAB";
 
 import { ProductsCarousel } from "components/ProductsCarousel";
 import { PageConstructor } from "components/PageConstructor";
@@ -17,14 +17,14 @@ function Home({
   texts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>{pageTitle}</title>
         <meta name={pageTitle} content={description} />
       </Head>
 
       <Page title={pageTitle} description={description}>
-        <Fab />
+        <FAB />
         <Content>
           <React.Fragment>
             <ProductsCarousel />
@@ -32,7 +32,7 @@ function Home({
           </React.Fragment>
         </Content>
       </Page>
-    </>
+    </React.Fragment>
   );
 }
 
@@ -85,7 +85,7 @@ export const getStaticProps: GetStaticProps = async () => {
       ],
     },
     {
-      id: "columns_01",
+      id: "columns_02",
       type: "columns",
       texts: [
         {
@@ -138,8 +138,11 @@ import CookieConsent from "react-cookie-consent";
           buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
           expires={150}
         >
+        <Text color="#fff">
+            Cookies e Privacidade
+          </Text>
           <Text color="#fff">
-            Este site utiliza cookies para otimizar a experiência do usuário.{" "}
+            Com os cookies e outras tecnologias semelhantes, temos o objetivo de melhorar a sua experiência em nosso site. Para obter mais informações, consulte a nossa Política de Privacidade.{" "}
           </Text>
         </CookieConsent>
         */

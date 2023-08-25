@@ -18,6 +18,7 @@ export const DesktopMenu = ({ items }: MenuProps) => {
       alignItems="center"
       justifyContent="space-between"
       gap={16}
+      display={["none", "none", "none", "flex"]}
     >
       <HStack fontSize={["sm", "md"]} gap={[2, 4]} mx={4} my={2}>
         {items.map(({ id, href, subItems }) => (

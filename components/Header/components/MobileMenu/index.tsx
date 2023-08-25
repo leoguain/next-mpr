@@ -1,5 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
+
 import {
   IconButton,
   Drawer,
@@ -13,7 +14,9 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
+  Flex,
 } from "@chakra-ui/react";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrAdd, GrClose } from "react-icons/gr";
 
@@ -25,7 +28,7 @@ export const MobileMenu = ({ items }: MenuProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <React.Fragment>
+    <Flex alignSelf="right" display={["flex", "flex", "flex", "none"]}>
       <IconButton
         aria-label="Main menu"
         icon={<RxHamburgerMenu size={28} />}
@@ -122,6 +125,6 @@ export const MobileMenu = ({ items }: MenuProps) => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </React.Fragment>
+    </Flex>
   );
 };

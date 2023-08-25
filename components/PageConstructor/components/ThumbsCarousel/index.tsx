@@ -35,8 +35,6 @@ export const ThumbsCarousel = ({ selectedItem }: SelectedItem) => {
 
   const [slider, setSlider] = React.useState<Slider | null>(null);
 
-  console.log(filterProducts);
-
   return (
     <Flex
       flexDirection={"column"}

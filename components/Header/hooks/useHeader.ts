@@ -1,7 +1,5 @@
 import { useMemo } from "react";
-
 import { MOBILE_BREAKPOINT } from "../../../lib/constants";
-
 import { useWindowSize } from "../../../hooks/useWindowsSize";
 
 export const useHeader = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
@@ -7,11 +7,8 @@ import { products } from "../../hooks/useProducts";
 
 import {
   Flex,
-  Text,
   Link,
   FormControl,
-  FormHelperText,
-  FormLabel,
   Button,
   Input,
   Textarea,
@@ -21,7 +18,8 @@ import {
   useToast,
 } from "@chakra-ui/react";
 
-import { ProductsDropDown } from "./components/ProductsDropDown";
+import { AuxiliarLabel } from "./components/AuxiliarLabel";
+import { FieldLabel } from "./components/FieldLabel";
 
 type Inputs = {
   name: string;
@@ -40,15 +38,20 @@ interface SelectedIdProps {
 }
 
 export const ContactForm = ({ selectedId }: SelectedIdProps) => {
+  const toast = useToast();
+
+  const [checked, setChecked] = useState(false);
+  const handleChange = () => {
+    setChecked(!checked);
+  };
+
   const {
     register,
     handleSubmit,
     reset,
-    watch,
     formState: { errors, isSubmitting },
   } = useForm<Inputs>();
 
-  const toast = useToast();
   const form: React.RefObject<HTMLFormElement> = useRef(null);
 
   const onSubmit: SubmitHandler<Inputs> = () =>
@@ -95,10 +98,11 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
       my={12}
       mx="auto"
       p={4}
+      zIndex={0}
     >
       <form ref={form} onSubmit={handleSubmit(onSubmit)}>
         <FormControl>
-          <FormLabel mt={4}>Nome*</FormLabel>
+          <FieldLabel text="Nome*" />
           <Input
             id="name"
             type="text"
@@ -109,7 +113,8 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
             {...register("name", { required: true })}
           />
           {errors.name && <span>O campo nome é obrigatório</span>}
-          <FormLabel mt={4}>CPF/CNPJ</FormLabel>
+
+          <FieldLabel text="CPF/CNPJ" />
           <Input
             id="document"
             type="number"
@@ -120,10 +125,8 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
               valueAsNumber: true,
             })}
           />
-          <FormHelperText pl={2} mb={4} fontSize="smaller">
-            Somente números
-          </FormHelperText>
-          <FormLabel mt={4}>E-mail</FormLabel>
+          <AuxiliarLabel text="Somente números" />
+          <FieldLabel text="E-mail" />
           <Input
             id="email"
             type="email"
@@ -133,7 +136,7 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
             mb={4}
             {...register("email")}
           />
-          <FormLabel mt={4}>Telefone</FormLabel>
+          <FieldLabel text="Telefone" />
           <Input
             id="phone"
             type="text"
@@ -142,10 +145,8 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
             size={["sm", "md"]}
             {...register("phone")}
           />
-          <FormHelperText pl={2} mb={4} fontSize="smaller">
-            Formato: (xx) xxxxx - xxxx
-          </FormHelperText>
-          <FormLabel mt={4}>Celular</FormLabel>
+          <AuxiliarLabel text="Formato: (xx) xxxxx - xxxx" />
+          <FieldLabel text="Celular" />
           <Input
             id="cellphone"
             type="text"
@@ -154,10 +155,8 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
             size={["sm", "md"]}
             {...register("cellphone")}
           />
-          <FormHelperText pl={2} mb={4} fontSize="smaller">
-            Formato: (xx) xxxxx - xxxx
-          </FormHelperText>
-          <FormLabel mt={4}>Produto</FormLabel>
+          <AuxiliarLabel text="Formato: (xx) xxxxx - xxxx" />
+          <FieldLabel text="Produto" />
 
           <Select
             id="product"
@@ -181,25 +180,28 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
               ))}
           </Select>
 
-          <FormLabel mt={4}>Mensagem*</FormLabel>
+          <FieldLabel text="Mensagem*" />
           <Textarea
             id="message"
             placeholder="Mensagem"
             bg="#fff"
             size={["sm", "md"]}
             mb={4}
-            {...(register("message"), { required: true })}
+            {...register("message")}
           />
+
           <Checkbox
             id="mailing"
             bg="#fff"
             size={["sm", "sm", "md"]}
             mb={4}
             {...register("mailing")}
+            onChange={handleChange}
+            value={checked ? "Sim" : "Não"}
           >
-            <option>Aceito receber e-mails de</option>
-            <Text>comunicações, ofertas ou promoções</Text>
+            Aceito receber e-mails de comunicações, ofertas ou promoções
           </Checkbox>
+
           <Checkbox
             id="privacy"
             bg="#fff"
@@ -207,23 +209,22 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
             mb={4}
             {...(register("privacy"), { required: true })}
           >
-            <option>Estou ciente e concordo com a</option>
-            <Text>
-              <Link
-                color="secondary.500"
-                fontWeight="normal"
-                href={"/politica-de-privacidade"}
-                isExternal
-              >
-                Política de Privacidade
-              </Link>{" "}
-              (Obrigatório para continuar)
-            </Text>
+            Estou ciente e concordo com a{" "}
+            <Link
+              color="secondary.500"
+              fontWeight="normal"
+              href={"/politica-de-privacidade"}
+              isExternal
+            >
+              Política de Privacidade
+            </Link>{" "}
+            (Obrigatório para continuar)
           </Checkbox>
         </FormControl>
 
         <Button
-          disabled={isSubmitting}
+          isLoading={isSubmitting}
+          loadingText="Enviando"
           type="submit"
           bg="primary.500"
           _hover={{ bg: "secondary.500" }}
@@ -235,14 +236,6 @@ export const ContactForm = ({ selectedId }: SelectedIdProps) => {
         >
           ENVIAR
         </Button>
-        {isSubmitting && (
-          <Spinner
-            ml={4}
-            color="secondary.500"
-            thickness="4px"
-            visibility="visible"
-          />
-        )}
       </form>
     </Flex>
   );

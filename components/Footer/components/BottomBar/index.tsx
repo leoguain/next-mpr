@@ -17,7 +17,7 @@ export const BottomBar = () => {
       px={4}
       justifyContent="center"
     >
-      <Flex alignItems="end" gap={8} h={"12"}>
+      <Flex alignItems="end" gap={[2, 8]} h={[8, 12]}>
         {bbItems.map(({ id, text, title, subtext, href, icon, color }) => (
           <React.Fragment key={id}>
             <Tooltip label={title}>
@@ -27,7 +27,7 @@ export const BottomBar = () => {
                     align={"center"}
                     justifyContent="center"
                     alignSelf={"end"}
-                    boxSize={14}
+                    boxSize={[12, 14]}
                     backgroundColor={color}
                     color="#fff"
                     borderRadius="100%"
@@ -43,18 +43,22 @@ export const BottomBar = () => {
                   </Flex>
 
                   <Flex
-                    display={["none", "none", "none", "none", "flex"]}
+                    display={["none", "none", "none", "flex"]}
                     flexDirection={"column"}
                     justifySelf={"center"}
                   >
                     <Text
                       color="secondary.500"
-                      fontSize="sm"
+                      fontSize={["xs", "xs", "xs", "xs", "sm"]}
                       lineHeight={"shorter"}
                     >
                       {text}
                     </Text>
-                    <Text color="#fff" fontSize="sm" lineHeight={"shorter"}>
+                    <Text
+                      color="#fff"
+                      fontSize={["xs", "xs", "xs", "sm", "sm"]}
+                      lineHeight={"shorter"}
+                    >
                       {subtext}
                     </Text>
                   </Flex>

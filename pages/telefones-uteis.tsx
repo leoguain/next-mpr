@@ -10,7 +10,7 @@ import { Content } from "components/Content";
 import { PageTitle } from "components/PageTitle";
 import { PageConstructor } from "components/PageConstructor";
 
-import Fab from "../components/FAB";
+import { FAB } from "../components/FAB";
 
 function TelefonesUteis({
   pageTitle,
@@ -27,7 +27,7 @@ function TelefonesUteis({
       </Head>
 
       <Page title={pageTitle} description={description}>
-        <Fab />
+        <FAB />
         <Content>
           <PageTitle pageTitle={pageTitle} pageUrl={asPath} />
           <PageConstructor text={usefulPhones} />
