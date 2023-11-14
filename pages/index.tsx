@@ -125,24 +125,3 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 export default Home;
-
-/*
-import CookieConsent from "react-cookie-consent";
-
-
-<CookieConsent
-          location="bottom"
-          buttonText="Entendido!"
-          cookieName="myAwesomeCookieName2"
-          style={{ background: "#2B373B" }}
-          buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-          expires={150}
-        >
-        <Text color="#fff">
-            Cookies e Privacidade
-          </Text>
-          <Text color="#fff">
-            Com os cookies e outras tecnologias semelhantes, temos o objetivo de melhorar a sua experiência em nosso site. Para obter mais informações, consulte a nossa Política de Privacidade.{" "}
-          </Text>
-        </CookieConsent>
-        */
