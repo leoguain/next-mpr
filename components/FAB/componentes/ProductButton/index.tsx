@@ -1,7 +1,5 @@
 import Link from "next/link";
-
 import { Flex, Text, Icon } from "@chakra-ui/react";
-
 import { FaWpforms } from "react-icons/fa";
 
 export const ProductButton = () => {

@@ -8,7 +8,7 @@ import { PortoButton } from "./components/PortoButton";
 import { exit } from "process";
 
 export const LoadPortoProducts = ({ products }: ProductsProps) => {
-  const externalProductsFile = "/productsExternal/";
+  const externalProductsFile = "/productsThumbs/";
   const page = "/produtos/";
 
   let portoProducts = products.filter((product) => {

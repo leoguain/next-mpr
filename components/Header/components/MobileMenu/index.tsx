@@ -1,8 +1,6 @@
 import React from "react";
-import NextLink from "next/link";
 
 import {
-  IconButton,
   Drawer,
   DrawerOverlay,
   DrawerContent,
@@ -11,114 +9,61 @@ import {
   DrawerBody,
   useDisclosure,
   Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
   Flex,
 } from "@chakra-ui/react";
 
-import { RxHamburgerMenu } from "react-icons/rx";
-import { GrAdd, GrClose } from "react-icons/gr";
-
-import { When } from "../../../shared/When";
+import { RxHamburgerMenu, RxChevronDown, RxChevronUp } from "react-icons/rx";
 
 import { MenuProps } from "../../types";
+import { MenuButton } from "./components/MenuButton";
+import { MenuItem } from "./components/MenuItem";
+import { MenuItemDropDown } from "./components/MenuItemDropDown";
 
 export const MobileMenu = ({ items }: MenuProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Flex alignSelf="right" display={["flex", "flex", "flex", "none"]}>
-      <IconButton
-        aria-label="Main menu"
+      <MenuButton
+        label="Main menu"
         icon={<RxHamburgerMenu size={28} />}
-        bg="#fff"
-        color="primary.500"
         onClick={onOpen}
-        size="lg"
       />
       <Drawer
         isOpen={isOpen}
-        placement="right"
         onClose={onClose}
+        placement="right"
         returnFocusOnClose={false}
         size="xs"
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton bg="secondary.500" color="#fff" />
+          <DrawerCloseButton
+            color="primary.500"
+            _hover={{ color: "secondary.500" }}
+            _active={{ color: "secondary.500" }}
+          />
           <DrawerHeader />
           <DrawerBody display="flex" flexDir="column">
             <Accordion allowMultiple>
               {items.map(({ id, href, subItems }) => (
                 <React.Fragment key={id}>
-                  <When value={!!subItems.length}>
-                    <AccordionItem>
-                      {({ isExpanded }) => (
-                        <React.Fragment>
-                          <AccordionButton
-                            as="span"
-                            flex="1"
-                            textAlign="left"
-                            justifyContent={"space-between"}
-                            color="primary.500"
-                            _hover={{
-                              color: "secondary.500",
-                            }}
-                          >
-                            {id}
-                            {isExpanded ? (
-                              <GrClose color="primary.500" />
-                            ) : (
-                              <GrAdd color="primary.500" />
-                            )}
-                          </AccordionButton>
-
-                          <AccordionPanel pb={4}>
-                            {subItems.map(({ id, href }) => (
-                              <NextLink
-                                key={id}
-                                href={href}
-                                passHref
-                                scroll={false}
-                              >
-                                <AccordionButton
-                                  as="span"
-                                  flex="1"
-                                  textAlign="left"
-                                  color={"primary.500"}
-                                  _hover={{
-                                    color: "secondary.500",
-                                    cursor: "pointer",
-                                  }}
-                                  onClick={onClose}
-                                >
-                                  {id}
-                                </AccordionButton>
-                              </NextLink>
-                            ))}
-                          </AccordionPanel>
-                        </React.Fragment>
-                      )}
-                    </AccordionItem>
-                  </When>
-
-                  <When value={!subItems.length}>
-                    <NextLink key={id} href={href} passHref scroll={false}>
-                      <AccordionItem>
-                        <AccordionButton
-                          as="span"
-                          flex="1"
-                          textAlign="left"
-                          color="primary.500"
-                          _hover={{ color: "secondary.500" }}
-                          onClick={onClose}
-                        >
-                          {id}
-                        </AccordionButton>
-                      </AccordionItem>
-                    </NextLink>
-                  </When>
+                  {subItems.length > 0 ? (
+                    <MenuItemDropDown
+                      title={id}
+                      openIcon={<RxChevronDown />}
+                      closeIcon={<RxChevronUp />}
+                      subItems={subItems}
+                      onClose={onClose}
+                    />
+                  ) : (
+                    <MenuItem
+                      id={id}
+                      title={id}
+                      href={href}
+                      onClose={onClose}
+                    />
+                  )}
                 </React.Fragment>
               ))}
             </Accordion>

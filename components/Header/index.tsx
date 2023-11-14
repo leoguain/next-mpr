@@ -1,9 +1,5 @@
-import React from "react";
-
 import { Flex } from "@chakra-ui/react";
-
 import { useHeader } from "./hooks/useHeader";
-
 import { MprLogo } from "./components/MprLogo";
 import { MobileMenu } from "./components/MobileMenu";
 import { DesktopMenu } from "./components/DesktopMenu";

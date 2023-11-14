@@ -7,7 +7,7 @@ import type { InferGetStaticPropsType, GetStaticProps } from "next";
 import { Page } from "components/Page";
 import { Content } from "components/Content";
 import { PageTitle } from "components/PageTitle";
-import { ContactForm } from "components/ContactForm";
+import { ContactForm } from "components/Forms/ContactForm";
 
 function PropostaOnline({
   pageTitle,

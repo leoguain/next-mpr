@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import NextLink from "next/link";
 import {
   Link,
@@ -9,16 +8,14 @@ import {
   MenuList,
   MenuItem,
   useDisclosure,
-  background,
 } from "@chakra-ui/react";
 
 import { HiChevronDown } from "react-icons/hi";
 import { HiChevronUp } from "react-icons/hi";
 
-import { MenuItemProps } from "../../types";
+import { MenuItemProps } from "../../../../types";
 
 export const DesktopSubMenu = ({ id, href, subItems }: MenuItemProps) => {
-  const { asPath } = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -27,7 +24,7 @@ export const DesktopSubMenu = ({ id, href, subItems }: MenuItemProps) => {
         as={Button}
         rightIcon={isOpen ? <HiChevronUp /> : <HiChevronDown />}
         href={href}
-        color={asPath.includes(id) ? "secondary.500" : "primary.500"}
+        color={"primary.500"}
         _hover={{ color: "secondary.500" }}
         onMouseEnter={onOpen}
         onMouseLeave={onClose}
@@ -48,7 +45,7 @@ export const DesktopSubMenu = ({ id, href, subItems }: MenuItemProps) => {
             href={href}
             passHref
             scroll={false}
-            color={asPath.includes(id) ? "secondary.500" : "primary.500"}
+            color={"primary.500"}
             _hover={{ color: "secondary.500" }}
           >
             <MenuItem _hover={{ color: "secondary.500" }}>{id}</MenuItem>

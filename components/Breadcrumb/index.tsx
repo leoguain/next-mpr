@@ -1,14 +1,11 @@
 import React from "react";
-
 import { Flex, Link } from "@chakra-ui/react";
-
-import { BreadcrumbProps } from "./types";
+import { BreadcrumbProps } from "types/global";
 
 export const Breadcrumb = ({ url, title }: BreadcrumbProps) => {
   const urlSeparator = "/";
   const breadcrumbSeparator = " >";
   const pages = url.split(urlSeparator);
-
   let urlFlex = "";
 
   return (
@@ -23,7 +20,7 @@ export const Breadcrumb = ({ url, title }: BreadcrumbProps) => {
           <Link color="gray.500" key={index + 1} href={urlFlex}>
             {pages.length - 1 === index
               ? ""
-              : page.charAt(0).toUpperCase() + page.slice(1)}
+              : page.replace(/^[a-z]/, (match) => match.toUpperCase())}
             {pages.length - 1 === index ? title : breadcrumbSeparator}
           </Link>
         </React.Fragment>

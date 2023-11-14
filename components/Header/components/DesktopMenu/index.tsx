@@ -1,17 +1,10 @@
 import React from "react";
-import { useRouter } from "next/router";
-import NextLink from "next/link";
-import { HStack, Link, Flex } from "@chakra-ui/react";
-
-import { When } from "../../../shared/When";
-
+import { HStack, Flex } from "@chakra-ui/react";
 import { MenuProps } from "../../types";
-
-import { DesktopSubMenu } from "../DesktopSubMenu";
+import { DesktopSubMenu } from "./components/DesktopSubMenu";
+import { DesktopMenuItem } from "./components/DesktopMenuItem";
 
 export const DesktopMenu = ({ items }: MenuProps) => {
-  const { asPath } = useRouter();
-
   return (
     <Flex
       borderRadius="sm"
@@ -23,22 +16,11 @@ export const DesktopMenu = ({ items }: MenuProps) => {
       <HStack fontSize={["sm", "md"]} gap={[2, 4]} mx={4} my={2}>
         {items.map(({ id, href, subItems }) => (
           <React.Fragment key={id}>
-            <When value={!!subItems.length}>
+            {subItems.length > 0 ? (
               <DesktopSubMenu id={id} href={href} subItems={subItems} />
-            </When>
-
-            <When value={!subItems.length}>
-              <Link
-                as={NextLink}
-                color={asPath.includes(id) ? "secondary.500" : "primary.500"}
-                _hover={{ color: "secondary.500" }}
-                key={id}
-                href={href}
-                scroll={false}
-              >
-                {id}
-              </Link>
-            </When>
+            ) : (
+              <DesktopMenuItem id={id} title={id} href={href} />
+            )}
           </React.Fragment>
         ))}
       </HStack>

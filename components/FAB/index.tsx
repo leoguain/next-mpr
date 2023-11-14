@@ -1,5 +1,4 @@
 import { Flex } from "@chakra-ui/react";
-
 import { ProductButton } from "./componentes/ProductButton";
 
 export const FAB = () => {

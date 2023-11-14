@@ -1,5 +1,3 @@
-import React from "react";
-
 import { FormHelperText } from "@chakra-ui/react";
 
 interface TextProps {

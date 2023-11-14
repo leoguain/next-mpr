@@ -10,7 +10,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-import { ContactForm } from "components/ContactForm";
+import { ContactForm } from "components/Forms/ContactForm";
 interface SelectedIdProps {
   selectedId?: string;
 }
@@ -32,7 +32,7 @@ export const ContactFormDrawer = ({ selectedId }: SelectedIdProps) => {
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} size={"md"}>
         <DrawerContent>
           <DrawerBody>
-            <ContactForm selectedId={selectedId} />
+            <ContactForm selectedId={selectedId} closeEvent={onClose} />
           </DrawerBody>
           <DrawerFooter>
             <Button
